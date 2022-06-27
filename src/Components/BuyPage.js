@@ -4,13 +4,22 @@ import { faker } from "@faker-js/faker";
 import { useEffect, useState } from "react";
 import "minifaker/locales/en";
 import CartItem from "./CartItem";
+
+//you can have your apiKey from the pexels and insert it here or insert it in a dotenv file
 const apiKey = "Your Api Key";
+//api url : only use if  you are using the official pexels website for data
 const url = "https://api.pexels.com/v1/search?query=laptop&per_page=6&page=1";
 
+//localUrl from were the json data is stored instead of calling athe original api
+//you have to change it to your url : by going to http://myjson.di.upm.es/ website and copy the json data from the pexels.json file(in the component folder)
 const localUrl = "http://myjson.dit.upm.es/api/bins/5zfb";
 
 const BuyPage = ({ addInCart }) => {
   const [product, setProduct] = useState([]);
+
+  //if you are using api directly from the pexels website then you can-
+  // uncomment the following function and -
+  //use it instead of below fetchPhot method.
 
   // const fetchPhotos = async()=>{
   //     const {data} = await axios.get(url,{
@@ -31,8 +40,6 @@ const BuyPage = ({ addInCart }) => {
       id: faker.datatype.uuid(),
     }));
     setProduct(allProduct);
-
-    console.log(product);
   };
 
   useEffect(() => {
