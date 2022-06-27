@@ -3,6 +3,7 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
+import BuyPage from "./Components/BuyPage";
 
 const App = () => {
   const [cartItem, setCartItem] = useState([]);
@@ -26,20 +27,7 @@ const App = () => {
   };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BuyPage addInCart={addToCart} />
     </div>
   );
 };
