@@ -12,7 +12,7 @@ const url = "https://api.pexels.com/v1/search?query=laptop&per_page=6&page=1";
 
 //localUrl from were the json data is stored instead of calling athe original api
 //you have to change it to your url : by going to http://myjson.di.upm.es/ website and copy the json data from the pexels.json file(in the component folder)
-const localUrl = "http://myjson.dit.upm.es/api/bins/5zfb";
+const localUrl = "https://myjson.dit.upm.es/api/bins/5zfb";
 
 const BuyPage = ({ addInCart }) => {
   const [product, setProduct] = useState([]);
