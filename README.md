@@ -13,7 +13,7 @@
 
 > Shopping Cart using reactjs . The project is to get familiarize with reactjs and conditional rendering . Users can add and remove items from the cart . Users can checkout (clears the react-state value. not using any payment gateway as of now ). The website uses faker npm package to get the random product names and prices for the product .
 
-<h4>This is Just a Demo-Website</h4>
+<h4>This is Just a Demo-Website , Not a Working Shopping Cart</h4>
 
 ### 🏠 [Homepage](/src/App.js)
 
